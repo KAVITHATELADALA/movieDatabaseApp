@@ -79,16 +79,16 @@ class PopularMovies extends Component {
     let content = null
 
     if (isLoading) {
-      content = <p className="status-text">Loading...</p>
+      content = <p className='status-text'>Loading...</p>
     } else if (error) {
-      content = <p className="status-text">{error}</p>
+      content = <p className='status-text'>{error}</p>
     } else if (moviesList.length === 0) {
-      content = <p className="status-text">No Movies Found</p>
+      content = <p className='status-text'>No Movies Found</p>
     } else {
       content = (
-        <ul className="movies-list">
+        <ul className='movies-list'>
           {moviesList.map(movie => (
-            <li className="movie-card" key={movie.id}>
+            <li className='movie-card' key={movie.id}>
               <img
                 src={
                   movie.poster_path
@@ -103,7 +103,7 @@ class PopularMovies extends Component {
               <p>{movie.vote_average}</p>
 
               <button
-                type="button"
+                type='button'
                 onClick={() => this.onClickViewDetails(movie.id)}
               >
                 View Details
@@ -115,10 +115,10 @@ class PopularMovies extends Component {
     }
 
     return (
-      <div className="movies-page">
+      <div className='movies-page'>
         <Header />
 
-        <h1 className="movies-heading">Popular</h1>
+        <h1 className='movies-heading'>Popular</h1>
 
         {content}
 
