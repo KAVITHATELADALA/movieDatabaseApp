@@ -1,0 +1,34 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.home-content {
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.home-content h1 {
+  font-size: 40px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.home-links a {
+  color: white;
+  background-color: #e50914;
+  padding: 15px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.home-links a:hover {
+  background-color: #b20710;
+}

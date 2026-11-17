@@ -1,0 +1,80 @@
+.movies-page {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  padding-bottom: 30px;
+}
+
+.movies-heading {
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.movie-card {
+  background-color: #202020;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  font-size: 16px;
+  padding: 0 8px;
+}
+
+.status-text {
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+App.css * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+img {
+  display: block;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+ul {
+  margin: 0;
+}
+
+input,
+button {
+  font-family: inherit;
+}
